@@ -10,7 +10,7 @@
   (for os delimiter issue , need to copy the data from this link create yaml file and execute kubectl apply)
 
 - Output with ClusterIP
-------------------------------------------------------------------------
+
 controlplane $ kubectl get all -n hello-kubernetes
 NAME                                    READY   STATUS    RESTARTS   AGE
 pod/hello-kubernetes-7c6b6df89f-bj2qz   1/1     Running   0          34s
@@ -25,7 +25,7 @@ deployment.apps/hello-kubernetes   2/2     2            2           35s
 NAME                                          DESIRED   CURRENT   READY   AGE
 replicaset.apps/hello-kubernetes-7c6b6df89f   2         2         2       35s
 
---------------------------------------------------------------------------------
+
 controlplane $ curl http://10.101.36.184:80
 <!DOCTYPE html>
 <html>
